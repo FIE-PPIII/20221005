@@ -10,13 +10,11 @@ protected:
 	virtual bool validate(int);
 	
 public:
-/*
-    Tecla(int);
+
 	Tecla();
-	Tecla(char);
-	virtual ~Tecla();*/
+	virtual ~Tecla();
 	
-	virtual char getKey() = 0;
+	virtual char getKey();
 };
 
 #endif
