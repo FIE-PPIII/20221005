@@ -3,16 +3,16 @@
 
 using namespace std;
 
-Numero::Numero(int num){
+Numero::Numero(int num) : Tecla(){
 	if (validate(num))
 		this->key = (char) num;
 	else
 		this->key = '\0';
 }
 
-Numero::Numero(){}
+Numero::Numero() : Tecla(){}
 
-Numero::Numero(char c){
+Numero::Numero(char c) : Tecla(){
 	if (validate((int) c))
 		this->key = c;
 }
