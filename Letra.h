@@ -15,8 +15,13 @@ class Letra : public Tecla {
 		Letra(char);
 		virtual ~Letra();
 		
+		char getKey();
 		void setLet(int);
 };
 
+
+inline char Letra::getKey(){
+	return this->key;
+}
 
 #endif
