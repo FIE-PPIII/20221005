@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Letra::Letra(int num) : Tecla(num){
+Letra::Letra(int num){
 	if (validate(num))
 		this->key = (char) num;
 	else
