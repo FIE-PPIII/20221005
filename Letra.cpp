@@ -3,21 +3,21 @@
 
 using namespace std;
 
-Letra::Letra(int num){
+Letra::Letra(int num) : Tecla(){
 	if (validate(num))
 		this->key = (char) num;
 	else
 		this->key = '\0';
 }
 
-Letra::Letra(){}
+Letra::Letra() : Tecla(){}
 
-Letra::Letra(char c){
+Letra::Letra(char c) : Tecla(){
 	if (validate((int) c))
 		this->key = c;
 }
 
-Letra::~Letra() {
+Letra::~Letra(){
 }
 
 inline bool Letra::validate(int num){
