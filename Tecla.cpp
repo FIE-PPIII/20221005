@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Tecla.h"
-/*
+
 using namespace std;
 
 
@@ -10,11 +10,10 @@ Tecla::Tecla(){
 Tecla::~Tecla(){
 }
 
-inline bool Tecla::validate(int num){
-	return (0 <= num && num < 256);
+bool Tecla::validate(int num){
+    return num >= 0 and num <= 255;
 }
 
-inline char Tecla::getKey(){
-	return this->key;
+char Tecla::getKey(){
+    return this->key;
 }
-*/
