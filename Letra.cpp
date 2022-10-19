@@ -10,7 +10,9 @@ Letra::Letra(int num) : Tecla(){
 		this->key = '\0';
 }
 
-Letra::Letra() : Tecla(){}
+Letra::Letra() : Tecla(){
+	this->key = '\0';
+}
 
 Letra::Letra(char c) : Tecla(){
 	if (validate((int) c))

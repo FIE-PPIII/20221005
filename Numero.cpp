@@ -10,7 +10,9 @@ Numero::Numero(int num) : Tecla(){
 		this->key = '\0';
 }
 
-Numero::Numero() : Tecla(){}
+Numero::Numero() : Tecla(){
+	this->key = '\0';
+}
 
 Numero::Numero(char c) : Tecla(){
 	if (validate((int) c))
